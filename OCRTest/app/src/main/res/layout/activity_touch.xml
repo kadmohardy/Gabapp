@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TouchActivity">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="TouchActivity"
+        tools:ignore="MergeRootFrame" >
+
+        <com.example.macosx.ocrtest.PreviewSurfaceView
+            android:id="@+id/preview_surface"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            />
+
+        <com.example.macosx.ocrtest.DrawingView
+            android:id="@+id/drawing_surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        >
+
+    <Button
+        android:id="@+id/bt_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/capture" />
+
+    <Button
+        android:id="@+id/bt_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button"/>
+
+    </LinearLayout>
+</RelativeLayout>
